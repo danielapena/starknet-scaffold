@@ -63,5 +63,3 @@ This process will:
 4. Update the necessary files while preserving tutorial-specific content
 5. Stage and commit the changes to base
 6. Push changes to the base branch
-
-Then you can update any step by replacing `step-1` with the desired step branch name in the second command.
