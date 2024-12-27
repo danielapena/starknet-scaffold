@@ -23,29 +23,6 @@ This tutorial guides you through building a decentralized application in three p
 
 Each step builds upon the previous one, introducing new concepts and features while maintaining a clean, production-ready codebase.
 
-## Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone git@github.com:Scaffold-Stark/basecamp.git
-   cd basecamp
-   ```
-
-2. Install dependencies:
-   ```bash
-   yarn install
-   ```
-
-3. Setup your environment:
-   ```bash
-   cp .env.example .env.local
-   ```
-
-4. Start the development server:
-   ```bash
-   yarn dev
-   ```
-
 ## Tutorial Structure
 
 The tutorial is organized into branches:
