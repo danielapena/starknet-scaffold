@@ -1,4 +1,4 @@
-# Contributing to Scaffold-Stark  sasdasd
+# Contributing to Scaffold-Stark
 
 Thank you for your interest in contributing to Scaffold-Stark! Your support enhances this Starknet-focused framework that bridges smart contract integration with web applications.
 
