@@ -39,12 +39,29 @@ To follow the tutorial, start with the base branch and progress through each ste
 This tutorial is built on top of Scaffold-Stark. To update the base framework:
 
 ```bash
-git clone git@github.com:Scaffold-Stark/basecamp.git basecamp-temp && cd basecamp-temp && git checkout base && mkdir temp_scaffold && cd temp_scaffold && git clone git@github.com:Scaffold-Stark/scaffold-stark-2.git . && rm -rf .git .github README.md && cp -r * ../ && cd .. && rm -rf temp_scaffold && git add . && git commit -m "Update framework to latest version"
+git clone git@github.com:Scaffold-Stark/basecamp.git basecamp-temp && cd basecamp-temp && git checkout base && mkdir temp_scaffold && cd temp_scaffold && git clone git@github.com:Scaffold-Stark/scaffold-stark-2.git . && rm -rf .git .github README.md && cp -r * ../ && cd .. && rm -rf temp_scaffold && git add . && git commit -m "Update framework to latest version" && git push origin base
 ```
 
-This command will:
+To update a specific step with the latest base changes:
+
+```bash
+git checkout step-1 && git merge base --no-edit && git push origin step-1
+```
+
+```bash
+git checkout step-2 && git merge base --no-edit && git push origin step-2
+```
+
+```bash
+git checkout step-3 && git merge base --no-edit && git push origin step-3
+```
+
+This process will:
 1. Clone the tutorial repository
 2. Switch to the base branch
 3. Download the latest Scaffold-Stark framework
 4. Update the necessary files while preserving tutorial-specific content
-5. Stage and commit the changes directly to base
+5. Stage and commit the changes to base
+6. Push changes to the base branch
+
+Then you can update any step by replacing `step-1` with the desired step branch name in the second command.
