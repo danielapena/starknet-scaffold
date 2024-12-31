@@ -6,20 +6,25 @@ Welcome to the Basecamp Scaffold Tutorial!!! This project provides a step-by-ste
 
 This tutorial guides you through building a decentralized application in three progressive steps:
 
-1. **Step 1: Basic ETH Integration**
-   - Simple greeting contract with ETH payments
-   - Basic contract status display
-   - Transaction history tracking
+0. **Base: Scaffold Stark Base**
+   - Starts from zero as a fresh clone of Scaffold-Stark
+     
+1. **Step 1: Basic Hooks Integration**
+   - No updates on contracts
+   - use all hooks to execute txs ( follow prompts on code )
 
 2. **Step 2: Multi-Token Support**
-   - Enhanced contract with ETH and STRK support
-   - Token selection interface
-   - Multi-token balance tracking
+   - update contract first to support STRK and ETH deposits ( follow prompts )
+   - update ui to support token selection and display ( follow prompts )
 
 3. **Step 3: Full zklend Integration**
-   - Complete DeFi integration with zklend
-   - Yield generation capabilities
-   - Advanced token management
+   - the only update on ui is we test with `mainnetFork`
+   - update contracts to integrate with zklend ( follow prompts )
+   - deploy to mainnet
+     
+4. **Step 4: Final Ste**
+   - nothing to do here
+   - this is how the project looks after completing step-4
 
 Each step builds upon the previous one, introducing new concepts and features while maintaining a clean, production-ready codebase.
 
