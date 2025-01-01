@@ -20,64 +20,6 @@ const Home = () => {
   const [greeting, setGreeting] = useState<string>("");
   const [displayAmount, setDisplayAmount] = useState<string>("0");
 
-  const { targetNetwork } = useTargetNetwork();
-
-  // const { data: YourContract } = useDeployedContractInfo("YourContract");
-  // const { data: EthContract } = useDeployedContractInfo("Eth");
-
-  // const { data: currentGreeting } = useScaffoldReadContract({
-  //   contractName: "YourContract",
-  //   functionName: "greeting",
-  // });
-
-  // const { data: premium } = useScaffoldReadContract({
-  //   contractName: "YourContract",
-  //   functionName: "premium",
-  // });
-
-  // const { data: ethBalance } = useScaffoldReadContract({
-  //   contractName: "Eth",
-  //   functionName: "balance_of",
-  //   args: [YourContract?.address],
-  // });
-
-  // const { data: lastBlock } = useBlockNumber({
-  //   blockIdentifier: "pending" as BlockTag,
-  // });
-
-  // const { data: events } = useScaffoldEventHistory({
-  //   contractName: "YourContract",
-  //   eventName: "contracts::YourContract::YourContract::GreetingChanged",
-  //   fromBlock: lastBlock ? (lastBlock > 50n ? BigInt(lastBlock - 50) : 0n) : 0n,
-  //   watch: true,
-  // });
-
-  // const { sendAsync: setGreetingNoPayment } = useScaffoldWriteContract({
-  //   contractName: "YourContract",
-  //   functionName: "set_greeting",
-  //   args: [greeting, 0n],
-  // });
-
-  // const { sendAsync: withdrawAll } = useScaffoldWriteContract({
-  //   contractName: "YourContract",
-  //   functionName: "withdraw",
-  // });
-
-  // const { sendAsync: setGreetingWithPayment } = useScaffoldMultiWriteContract({
-  //   calls: [
-  //     {
-  //       contractName: "Eth",
-  //       functionName: "approve",
-  //       args: [YourContract?.address, BigInt(inputAmount)],
-  //     },
-  //     {
-  //       contractName: "YourContract",
-  //       functionName: "set_greeting",
-  //       args: [greeting, BigInt(inputAmount)],
-  //     },
-  //   ],
-  // });
-
   const handleSetGreeting = async () => {
     const amount = BigInt(inputAmount);
     if (amount > 0n) {
@@ -96,7 +38,7 @@ const Home = () => {
           </span>
           <div className="flex justify-center">
             <span className="text-base mt-2 badge badge-primary">
-              {targetNetwork.name}
+              {/* {targetNetwork.name} */}
             </span>
           </div>
         </h1>
