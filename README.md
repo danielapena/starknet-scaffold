@@ -9,7 +9,7 @@ Welcome to the Basecamp Scaffold Tutorial!!! This project provides a step-by-ste
 
 ## What You'll Build
 
-This tutorial guides you through building a decentralized application in three progressive steps. All changes throughout the tutorial are focused on just two main files:
+This tutorial guides you through building a decentralized application in three progressive steps, with each section designed to take 30-40 minutes in a workshop setting. All changes throughout the tutorial are focused on just two main files:
 - Frontend: [`packages/nextjs/app/page.tsx`](https://github.com/Scaffold-Stark/basecamp/blob/base/packages/nextjs/app/page.tsx)
 - Smart Contract: [`packages/snfoundry/contracts/src/yourcontract.cairo`](https://github.com/Scaffold-Stark/basecamp/blob/base/packages/snfoundry/contracts/src/yourcontract.cairo)
 
@@ -43,7 +43,15 @@ Each step builds upon the previous one, introducing new concepts and features wh
 
 ## Getting Started
 
-1. **Environment Setup**
+1. **Clone and Setup**
+   ```bash
+   git clone https://github.com/Scaffold-Stark/basecamp.git
+   cd basecamp
+   git checkout step-0
+   yarn install
+   ```
+
+2. **Environment Setup**
    ```bash
    # Copy the example env file in packages/snfoundry
    cp packages/snfoundry/.env.example packages/snfoundry/.env
@@ -58,15 +66,7 @@ Each step builds upon the previous one, introducing new concepts and features wh
    > 
    > 💡 The `.env` file belongs in the `packages/snfoundry/` directory where your smart contracts live
    >
-   > 🔥 Try to use mainnet to teach, use the same format but replace `SEPOLIA` with `MAINNET` in the variable names
-
-2. **Clone and Setup**
-   ```bash
-   git clone https://github.com/Scaffold-Stark/basecamp.git
-   cd basecamp
-   git checkout step-0
-   yarn install
-   ```
+   > 🔥 Try to use mainnet to teach !!! , use the same format but replace `SEPOLIA` with `MAINNET` in the variable names
 
 3. **Start Development**
    ```bash
