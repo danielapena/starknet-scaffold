@@ -14,7 +14,6 @@ import { useScaffoldWriteContract } from "~~/hooks/scaffold-stark/useScaffoldWri
 import { useTargetNetwork } from "~~/hooks/scaffold-stark/useTargetNetwork";
 
 const Home = () => {
-  // const [selectedToken, setSelectedToken] = useState<"ETH" | "STRK">("ETH");
   const [selectedToken, setSelectedToken] = useState<"ETH">("ETH");
   const [inputAmount, setInputAmount] = useState<bigint>(0n);
   const [greeting, setGreeting] = useState<string>("");
@@ -23,9 +22,7 @@ const Home = () => {
   const handleSetGreeting = async () => {
     const amount = BigInt(inputAmount);
     if (amount > 0n) {
-      // await setGreetingWithPayment();
     } else {
-      // await setGreetingNoPayment();
     }
   };
 
