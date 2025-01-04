@@ -97,17 +97,17 @@ const Home = () => {
                     ETH
                   </span> */}
                 </div>
-                <div className="p-4 bg-base-300 rounded-lg">
+                {/* <div className="p-4 bg-base-300 rounded-lg">
                   <span className="block text-sm opacity-70">
                     Available STRK
                   </span>
-                  {/* <span className="text-xl font-medium">
+                  <span className="text-xl font-medium">
                     {strkBalance
                       ? (Number(strkBalance) / 10 ** 18).toFixed(6)
                       : "0.000000"}{" "}
                     STRK
-                  </span> */}
-                </div>
+                  </span>
+                </div> */}
               </div>
             </div>
           </div>
