@@ -1,6 +1,3 @@
-> ⚠️ **ATTENTION: This repository is exclusively for Basecamp Teachers.**
-> If you are a developer looking to learn Starknet, please visit [speedrunstark.com](https://speedrunstark.com)
-
 # Basecamp Scaffold Tutorial
 
 Welcome to the Basecamp Scaffold Tutorial!!! This project provides a step-by-step guide to building decentralized applications on Starknet using Scaffold-Stark. Through a series of progressive steps, you'll learn how to create, deploy, and enhance smart contracts while building a production-ready frontend.
